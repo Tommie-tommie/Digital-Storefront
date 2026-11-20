@@ -1,31 +1,58 @@
-/vendor/
-node_modules/
+# Dependencies & build output
+/vendor
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/bootstrap/ssr
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+/auth.json
+
+# Caches, logs, keys
+/storage/*.key
+/storage/pail
+.phpunit.cache
+.phpunit.result.cache
 npm-debug.log
 yarn-error.log
+*.sql
+*.dump
+*.backup
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
+# Generated frontend files (Wayfinder)
+/resources/js/actions
+/resources/js/routes
+/resources/js/wayfinder
+/public/fonts-manifest.dev.json
 
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
-
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
-
-storage/*.key
-.env
-Homestead.yaml
+# Local dev / editors / OS
 Homestead.json
-/.vagrant
-.phpunit.result.cache
-/.phpunit.cache
-
-/public/build
-/storage/pail
-.env.backup
-.env.production
+Homestead.yaml
 .phpactor.json
-auth.json
+.DS_Store
+Thumbs.db
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+
+# AI tooling
+/.agents
+/.amp
+/.claude
+/.cursor
+/.factory
+/.junie
+/.kiro
+/.pi
+/.mcp.json
+/AGENTS.md
+/CLAUDE.md
+/boost.json
+/opencode.json
+/opencode.jsonc
